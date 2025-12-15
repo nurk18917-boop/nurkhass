@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Starting Business Marketing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>Starting Business Marketing</h2>
+</header>
+
+<!-- LOGIN -->
+<div class="container login-box" id="loginPage">
+    <div class="card">
+        <h3>Login</h3>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+        <p id="loginError" class="error"></p>
+    </div>
+</div>
+
+<!-- HOME -->
+<div class="container hidden" id="homePage">
+
+    <div class="card">
+        <h3>Penentuan Masalah</h3>
+        <p>
+            Banyak pelaku usaha pemula mengalami kesulitan dalam memasarkan produk
+            karena belum memiliki media digital yang sederhana, aman, dan mudah digunakan.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Menyusun Algoritma</h3>
+        <ol>
+            <li>Pengguna login ke sistem</li>
+            <li>Sistem memverifikasi akun</li>
+            <li>Pengguna masuk ke halaman utama</li>
+            <li>Pengguna mengunggah gambar produk</li>
+            <li>Sistem menampilkan produk</li>
+        </ol>
+    </div>
+
+    <div class="card">
+        <h3>Upload Gambar Produk</h3>
+        <input type="file" id="imageInput" accept="image/*">
+        <button onclick="uploadImage()">Upload</button>
+        <div id="productGallery"></div>
+    </div>
+
+    <button onclick="logout()">Logout</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
